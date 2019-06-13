@@ -5,26 +5,26 @@
   <title>Bee, a Beekeeper Management Game</title>
   <style>
     * { padding: 0; margin: 0 }
-    canvas { background: #a98307; display: block; margin: 0 auto; }
+    canvas { background: #eee; display: block; margin: 0 auto; }
   </style>
 </head>
 <body>
 
-<canvas id="myCanvas" width="480" height="320"></canvas>
+<canvas id="myCanvas" width="960" height="640"></canvas>
 
 <script>
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d");
   
-  function draw() {
+  function drawBall() {
     ctx.beginPath();
     ctx.arc(50, 50, 10, 0, Math.PI*2);
     ctx.fillStyle = "#0095DD";
     ctx.fill();
     ctx.closePath();
   }
-  setInterval(draw, 10);
   
+  setInterval(draw, 10);
 </script>
 
 </body>
